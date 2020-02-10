@@ -4,12 +4,6 @@ from DataBase import commands
 
 app = Flask(__name__)
 
-
-@app.route('/sanity')
-def sanity():
-    return "Server is running"
-
-
 TOKEN = '1009210321:AAHcEKy48Ogh1xrXit4oJQzX8QO8BsmbkKM'
 TELEGRAM_INIT_WEBHOOK_URL = 'https://api.telegram.org/bot{}/setWebhook?' \
                             'url=https://39d134da.ngrok.io/message'.format(TOKEN)
